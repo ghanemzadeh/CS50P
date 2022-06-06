@@ -1,2 +1,2 @@
-name = input("What's the textclean ").strip()
+name = input("What's the textclean ").strip().replace(" ", "...")
 print(name)
