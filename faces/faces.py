@@ -4,9 +4,9 @@ def main():
 
 
 def convert(text):
-    emoji = text.replace(":)", "🙂")
-    emoji = text.replace(":(", "🙁")
-    print(text, "= ", emoji)
+    text = text.replace(":)", "🙂")
+    text = text.replace(":(", "🙁")
+    print(text)
 
 
 main()
