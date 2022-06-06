@@ -1,5 +1,4 @@
 greeting = input ("Greeting: ").strip().lower()
-print(greeting)
 
 if greeting.startswith("hello"):
     print("$0")
