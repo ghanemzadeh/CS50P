@@ -1,6 +1,6 @@
 answer= input ("What is the answer to the Great Question of Life, the Universe and Everything? ").split()
+print (answer)
 
-answer = answer.lower()
 if answer == "42":
     response ="YES"
 elif answer == "forty-two":
