@@ -6,7 +6,7 @@ def main():
 
 
 def dollars_to_float(d):
-    dol = float (s.replace('$', ''))
+    dol = float (d.replace('$', ''))
     print(dol)
 
 
