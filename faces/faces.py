@@ -1,9 +1,9 @@
 def main():
-    name = input("What's your name? ")
-    hello(name)
+    emoticon = input("What's your emoticon? ")
+    convert(emoticon)
 
 
-def hello(to="world"):
+def convert(to=":)"):
     print("hello,", to)
 
 
