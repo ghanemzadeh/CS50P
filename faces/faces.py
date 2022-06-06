@@ -6,6 +6,11 @@ def main():
 def convert(to=":)"):
     if to == ":)":
         emoji = "🙂"
+    elif to == ":(":
+        emoji = "🙁"
+    else:
+        emoji = to
+
     print(to, "= ", emoji)
 
 
