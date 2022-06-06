@@ -1,1 +1,2 @@
-greeting = input("Greeting: ")
+greeting = input ("Greeting: ").strip().lower()
+print(greeting)
