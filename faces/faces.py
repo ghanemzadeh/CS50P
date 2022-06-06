@@ -3,7 +3,7 @@ def main():
     convert(emoticon)
 
 
-def convert(to=":)"):
+def convert(to):
     if to == ":)":
         emoji = "🙂"
     elif to == ":(":
