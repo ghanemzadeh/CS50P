@@ -4,7 +4,9 @@ def main():
 
 
 def convert(to=":)"):
-    print("hello,", to)
+    if to == ":)":
+        emoji = "🙂"
+    print(to, "= ", emoji)
 
 
 main()
