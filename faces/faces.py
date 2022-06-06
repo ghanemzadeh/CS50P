@@ -3,15 +3,10 @@ def main():
     convert(emoticon)
 
 
-def convert(to):
-    if to == ":)":
-        emoji = "🙂"
-    elif to == ":(":
-        emoji = "🙁"
-    else:
-        emoji = to
-
-    print(to, "= ", emoji)
+def convert(text):
+    emoji = text.replace(":)", "🙂")
+    emoji = text.replace(":(", "🙁")
+    print(text, "= ", emoji)
 
 
 main()
