@@ -8,7 +8,7 @@ if y == "+":
 elif y == "*":
     print (x*z)
 elif y == "/":
-    print (x/z)
+    print (round(x/z, 1))
 elif y == "-":
     print (x-z)
 else:
