@@ -11,3 +11,5 @@ elif y == "/":
     print (x/z)
 elif y == "-":
     print (x-z)
+else:
+    print("wrong number or operator")
