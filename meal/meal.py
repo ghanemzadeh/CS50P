@@ -1,12 +1,14 @@
 def main():
     time = input("What time is it? ")
-    coverted = convert(time)
-    if 7.0 =< coverted =< 8.0:
+    convert(time)
+    coverted = 7.1
+    if 7.0 <= coverted <= 8.0:
         print("breakfast time")
 
 
 def convert(time):
-    ...
+    h , m = time.split(" ")
+    print (h,m)
 
 
 if __name__ == "__main__":
