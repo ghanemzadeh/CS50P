@@ -11,9 +11,8 @@ def convert(time):
     h , m = time.split(":")
     h = float (h)
     m = float (m)
-    print ("h, m, h+ (m/60) =", h, m ,h+ (m/60))
 
-    return h+ (m/60)
+    return round(h+ m/60, 1)
 
 
 if __name__ == "__main__":
