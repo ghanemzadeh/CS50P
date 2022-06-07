@@ -8,7 +8,9 @@ elif filename.endswith("png"):
     print("image/png")
 elif filename.endswith("pdf"):
     print("application/pdf")
-elif filename.endswith("pdf"):
-    print("application/pdf")
+elif filename.endswith("txt"):
+    print("text/plain")
+elif filename.endswith("zip"):
+    print("application/zip")
 else:
     print ("application/octet-stream")
