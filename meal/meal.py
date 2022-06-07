@@ -11,9 +11,9 @@ def convert(time):
     h , m = time.split(":")
     h = float (h)
     m = float (m)
-    print ("h+ (m*10/6) =", h+ (m*10/6))
+    print ("h+ (m/60) =", h+ (m/6))
 
-    return h+ (m*10/6)
+    return h+ (m/6)
 
 
 if __name__ == "__main__":
