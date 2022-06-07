@@ -1,3 +1,6 @@
 expression = input("Expression: ")
 x, y, z = expression.split(" ")
-print(x,y,z)
+x = float(x)
+z = float (z)
+
+if y == "
