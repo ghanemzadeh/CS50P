@@ -10,6 +10,7 @@ def main():
 def convert(time):
     h , m = time.split(":")
     print (h,m)
+    return h+
 
 
 if __name__ == "__main__":
