@@ -15,7 +15,10 @@ def is_valid(s):
             print (c)
             if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
                 status = False
-            #elif:
+                break
+            elif:
+                
+
 
     else:
         status = False
