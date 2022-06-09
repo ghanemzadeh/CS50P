@@ -11,10 +11,11 @@ def is_valid(s):
     if len(s) < 2 or len(s) > 6 :
         status = False
     elif s[0:2].isalpha():
-        print("is alpha: ", s[0:2])
+        
         for c in s[2:len(s)]:
             i = s.index(c)
-            if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
+            if c in [" ", ",", ".","\"","'","?",";",":","!","-"]:
+                print("was it here")
                 status = False
                 break
             #elif s[i:].isdigit() and int(c) != 0:
