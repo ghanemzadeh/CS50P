@@ -18,10 +18,10 @@ def is_valid(s):
                 break
             if s[i:].isdigit() and int(c) != 0:
                 print(c)
-                status = True
+                return True
             else:
                 print("zero=",c)
-                return False
+                status = False
     else:
         status = False
 
