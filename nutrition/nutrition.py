@@ -23,5 +23,5 @@ fruits = {
 
 item = input("Item: ").lower
 
-if item in fruits:
+if "apple" in fruits:
     print("Calories: ", fruits[item])
