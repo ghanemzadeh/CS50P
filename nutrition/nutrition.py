@@ -21,7 +21,10 @@ fruits = {
     "watermelon": 80
 }
 
-item = input("Item: ").lower
+item = input("Item: ").lower()
 
-if "apple" in fruits:
+if item in fruits:
     print("Calories: ", fruits[item])
+
+#for fruit in fruits:
+#    print(fruit, fruits[fruit], sep=", ")
