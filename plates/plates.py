@@ -12,9 +12,11 @@ def is_valid(s):
     elif s[0:2].isalpha():
         print (s[0:2])
         status = True
-        for c in s[2:range(len(s))]:
-            if c in ["", ",", ".","\"","'","?",";",":","!", "-"]:
-                status = False
+        for c in s[2:len(s)]:
+            print (c)
+         #   if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
+          #      status = False
+
         return status
     else:
         return False
