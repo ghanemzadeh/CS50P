@@ -11,6 +11,7 @@ def is_valid(s):
         return False
     elif s[0:2].isalpha():
         print (s[0:2])
+        for c in s[2:range(len(s))]
         return True
     else:
         return False
