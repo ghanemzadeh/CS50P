@@ -7,13 +7,10 @@ def main():
 
 
 def is_valid(s):
-    
     status = True
     if len(s) < 2 or len(s) > 6 :
         status = False
     elif s[0:2].isalpha():
-        print (s[0:2])
-        status = True
         for c in s[2:len(s)]:
             print (c)
             if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
