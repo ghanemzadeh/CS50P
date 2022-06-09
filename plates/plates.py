@@ -16,11 +16,12 @@ def is_valid(s):
             if c in [" ", ",", ".","\"","'","?",";",":","!","-"]:
                 return False
                 break
-        if s[i:].isdigit() and int(c) != 0:
-            print(c)
-            status = True
-        else:
-            return False
+            if s[i:].isdigit() and int(c) != 0:
+                print(c)
+                status = True
+            else:
+                print("zero=",c)
+                return False
     else:
         status = False
 
