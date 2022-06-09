@@ -14,8 +14,10 @@ def is_valid(s):
         status = True
         for c in s[2:len(s)]:
             print (c)
-         #   if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
-          #      status = False
+            if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
+                status = False
+            elif:
+                
 
         return status
     else:
