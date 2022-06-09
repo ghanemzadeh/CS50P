@@ -21,8 +21,10 @@ def is_valid(s):
             if s[i:].isdigit() and int(c) != 0:
                 return True
             else:
+                print("1: ", s)
                 return False
     else:
+        print("2: ", s)
         status = False
 
     return status
