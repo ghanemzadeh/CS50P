@@ -11,16 +11,15 @@ def is_valid(s):
     if len(s) < 2 or len(s) > 6 :
         status = False
     elif s[0:2].isalpha():
-
         for c in s[2:len(s)]:
             i = s.index(c)
             if c in [" ", ",", ".","\"","'","?",";",":","!","-"]:
-                status = False
+                return False
                 break
-            elif s[i:].isdigit() and int(c) != 0:
-                status = True
-            else:
-                status = False
+        if s[i:].isdigit() and int(c) != 0:
+            status = True
+        else:
+            return False
     else:
         status = False
 
