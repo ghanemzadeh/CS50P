@@ -19,7 +19,6 @@ def is_valid(s):
                 break
             elif s[i:].isdigit() and int(c) != 0:
                 status = True
-                break
             else:
                 status = False
     else:
