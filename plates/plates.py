@@ -18,6 +18,9 @@ def is_valid(s):
                 break
             elif c.isdigit() and int(c) != 0:
                     print ("digit=", c)
+                    break
+            else:
+                status = False
 
 
     else:
