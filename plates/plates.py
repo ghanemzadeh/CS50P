@@ -13,13 +13,14 @@ def is_valid(s):
     elif s[0:2].isalpha():
         for c in s[2:len(s)]:
             print (c)
+            i = s.index(c)
+            print("index= ", i)
             if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
                 status = False
                 break
             elif s[i:].isdigit() and int(c) != 0:
                     break
             else:
-                if
                 status = False
 
 
