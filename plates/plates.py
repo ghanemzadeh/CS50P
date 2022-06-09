@@ -17,10 +17,10 @@ def is_valid(s):
                 return False
                 break
             if s[i:].isdigit() and int(c) != 0:
-                print(c)
+                return True
+            elif s[i:].isalpha():
                 return True
             else:
-                print("zero=",c)
                 return False
     else:
         status = False
