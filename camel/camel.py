@@ -6,3 +6,4 @@ for c in string:
         print("_", c.lower(), end="")
     else:
         print(c, end="")
+
