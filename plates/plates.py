@@ -11,8 +11,10 @@ def is_valid(s):
         return False
     elif s[0:2].isalpha():
         print (s[0:2])
-        for c in s[2:range(len(s))]
-        return True
+        status = True
+        for c in s[2:range(len(s))]:
+            if c != 0:
+                return True
     else:
         return False
 
