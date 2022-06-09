@@ -1,3 +1,4 @@
 fruits = {
-    "Apple",
+    "Apple": 130,
+    
 }
