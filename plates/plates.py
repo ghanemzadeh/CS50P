@@ -16,8 +16,8 @@ def is_valid(s):
             if c in ["", ",", ".","\"","'","?",";",":","!","-"]:
                 status = False
                 break
-            elif c.isdecimal():
-                    print ("decimal=", c)
+            elif c.isdigit() and int(c) != 0:
+                    print ("digit=", c)
 
 
     else:
