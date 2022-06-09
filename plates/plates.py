@@ -7,8 +7,10 @@ def main():
 
 
 def is_valid(s):
+    
+    status = True
     if len(s) < 2 or len(s) > 6 :
-        return False
+        status = False
     elif s[0:2].isalpha():
         print (s[0:2])
         status = True
@@ -18,10 +20,12 @@ def is_valid(s):
                 status = False
             #elif:
 
-
-        return status
     else:
-        return False
+        status = False
+
+    return status
+
+
 
 
 main()
