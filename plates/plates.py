@@ -21,7 +21,7 @@ def is_valid(s):
                 return True
             else:
                 print("zero=",c)
-                status = False
+                return False
     else:
         status = False
 
