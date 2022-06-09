@@ -16,9 +16,9 @@ def is_valid(s):
             if c in [" ", ",", ".","\"","'","?",";",":","!","-"]:
                 return False
                 break
-            if s[i:].isdigit() and int(c) != 0:
-                return True
             elif s[i:].isalpha():
+                return True
+            if s[i:].isdigit() and int(c) != 0:
                 return True
             else:
                 return False
