@@ -7,3 +7,5 @@ for c in string:
     else:
         print(c, end = "")
 
+print()
+
