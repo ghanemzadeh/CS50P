@@ -30,4 +30,4 @@ while True:
             print (y, f"{m:02}", d, sep="-")
             break
         except ValueError:
-            break
+            pass
