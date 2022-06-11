@@ -10,7 +10,9 @@
     "Tortilla Salad": 8.00
 }
 
-try:
-    item = input("Item: ")
-except EOFError:
-    ...
+while True:
+
+    try:
+        item = input("Item: ")
+    except EOFError:
+    except KeyError:
