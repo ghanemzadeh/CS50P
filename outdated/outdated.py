@@ -16,7 +16,7 @@ months = [
 while True:
     try:
        date = input ("Date: ")
-       m, d, y = fraction.split("/")
+       m, d, y = date.split("/")
        print (y, "-", m,"-", d)
        break
     except ValueError:
