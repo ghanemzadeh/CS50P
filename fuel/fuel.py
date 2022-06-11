@@ -1,6 +1,3 @@
-
-
-i=1
 while True:
     try:
         fraction = input ("Fraction: ")
@@ -19,9 +16,10 @@ while True:
             pass
         else:
             print (str(percent)+"%")
+            break
     except ValueError:
         print("x/y, x or y are not intger")
         pass
     except ZeroDivisionError:
         pass
-    i+=1
+
