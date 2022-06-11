@@ -11,8 +11,12 @@ while True:
         percent = int(x/y*100)
         if percent <= 1:
            print("E")
-        elif percent >= 90:
+           break
+        elif 100 >= percent >= 90:
             print("F")
+            break
+        elif percent > 100:
+            pass
         else:
             print (str(percent)+"%")
     except ValueError:
