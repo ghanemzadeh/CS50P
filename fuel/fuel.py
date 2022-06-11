@@ -1,10 +1,12 @@
 fraction = input ("Fraction: ")
 x, y = fraction.split("/")
-x = int(x)
-y = int(y)
 
-while True:
+
+#while True:
     try:
+        x = int(x)
+        y = int(y)
+
         percent = int(x/y*100)
         if percent <= 1:
            print("E")
@@ -13,6 +15,7 @@ while True:
         else:
             print (str(percent)+"%")
     except ValueError:
+        print("x/y, x or y are not intger")
         pass
     except ZeroDivisionError:
         pass
