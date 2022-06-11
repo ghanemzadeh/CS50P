@@ -27,9 +27,11 @@ while True:
        break
     except ValueError:
         try:
+            print("month")
             m, d, y = date.split(" ")
             d = int (d)
             y = int(y)
+            print("ymd= ",y,m,d)
             m = months.index(m) + 1
             if d > 31 or m >12:
                 continue
