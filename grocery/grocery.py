@@ -1,9 +1,6 @@
-groceries = {
-}
+groceries = {}
 
-total = 0
 while True:
-
     try:
         grocery = input("Item: ").upper()
         if grocery in groceries:
