@@ -15,10 +15,11 @@ months = [
 
 while True:
     try:
-       date = input ("Date: ")
+       date = input ("Date: ")..strip()
        m, d, y = date.split("/")
        m = int(m)
        d = int (d)
+       y = int(y)
        #0 >= m >= 13 or
        if d > 31 or m >12:
            continue
