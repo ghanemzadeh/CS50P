@@ -18,4 +18,4 @@ while True:
 dict(sorted(groceries.items(), key=lambda item: item[0]))
 
 for grocery in groceries:
-    print()
+    print(groceries[grocery], grocery)
