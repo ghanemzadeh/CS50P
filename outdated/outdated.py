@@ -32,7 +32,7 @@ while True:
             print("ymd= ",y,m,d)
             d = int (d)
             y = int (y)
-            print("ymd= ",y,m,d)
+            print("ymd2= ",y,m,d)
             m = months.index(m) + 1
             if d > 31 or m >12:
                 continue
