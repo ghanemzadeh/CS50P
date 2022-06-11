@@ -9,7 +9,7 @@ while True:
         if grocery in groceries:
             groceries[grocery]+=1
         else:
-            groceries.update({grocery:1})
+            groceries[grocery]=1
     except EOFError:
         print()
         break
