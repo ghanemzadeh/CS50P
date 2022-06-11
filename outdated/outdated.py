@@ -15,7 +15,7 @@ months = [
 
 while True:
     try:
-       date = input ("Date: ")..strip()
+       date = input ("Date: ").strip()
        m, d, y = date.split("/")
        m = int(m)
        d = int (d)
