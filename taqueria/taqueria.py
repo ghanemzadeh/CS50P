@@ -1,4 +1,4 @@
-{
+items = {
     "Baja Taco": 4.00,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -14,5 +14,10 @@ while True:
 
     try:
         item = input("Item: ")
+        if item in items:
+            price = float (itam)
+            print(price)
     except EOFError:
+        break
     except KeyError:
+        pass
