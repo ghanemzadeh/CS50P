@@ -24,4 +24,6 @@ while True:
        break
     except ValueError:
         print("valeue")
+        if m in months:
+            m
         pass
