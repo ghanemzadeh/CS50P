@@ -19,9 +19,8 @@ while True:
        m, d, y = date.split("/")
        m = int(m)
        d = int (d)
-       #0 >= m >= 13 or 
-       if 0 >= d >= 32:
-           print("out")
+       #0 >= m >= 13 or
+       if d > 31 or m >12:
            continue
        print (y, f"{m:02}", d, sep="-")
        break
