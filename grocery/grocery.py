@@ -15,7 +15,7 @@ while True:
         break
     except KeyError:
         pass
-dict(sorted(groceries.items(), key=lambda item: item[0]))
+dict(sorted(groceries, key=None, reverse=False))
 
 for grocery in groceries:
     print(groceries[grocery], grocery)
