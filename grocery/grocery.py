@@ -9,7 +9,7 @@ while True:
             groceries[grocery]=1
     except EOFError:
         for grocery in sorted (groceries.keys()):
-            print(groceries[grocery], grocery)
+            print(groceries[grocery], grocery,"\n")
         break
     except KeyError:
         pass
