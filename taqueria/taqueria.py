@@ -15,7 +15,7 @@ while True:
     try:
         item = input("Item: ")
         if item in items:
-            price = float (itam)
+            price = float (items[item])
             print(price)
     except EOFError:
         break
