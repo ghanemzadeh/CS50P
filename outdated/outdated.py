@@ -27,5 +27,5 @@ while True:
         m, d, y = date.split(" ")
         print("valeue")
         m = months.index(m) + 1
-        print (y, f"{m:02}, d, sep="-")
+        print (y, f"{m:02}", d, sep="-")
         break
