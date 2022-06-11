@@ -21,12 +21,13 @@ while True:
        d = int (d)
        if 1 > m > 12 and 1 > d >31:
            continue
-       print (y, "-", f"{m:02}","-", d,)
+       pprint (y, f"{m:02}", d, sep="-")
        break
     except ValueError:
         try:
             m, d, y = date.split(" ")
-            print("valeue")
             m = months.index(m) + 1
             print (y, f"{m:02}", d, sep="-")
-        break
+            break
+        except ValueError:
+            break
