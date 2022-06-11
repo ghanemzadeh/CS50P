@@ -29,6 +29,7 @@ while True:
         try:
             print("month")
             m, d, y = date.split(" ")
+            d = date.split(",")
             print("ymd= ",y,m,d)
             d = int (d)
             y = int (y)
