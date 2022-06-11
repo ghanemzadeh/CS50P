@@ -1,8 +1,8 @@
 fraction = input ("Fraction: ")
 x, y = fraction.split("/")
 
-
-#while True:
+i=1
+while i < 3:
     try:
         x = int(x)
         y = int(y)
@@ -19,3 +19,4 @@ x, y = fraction.split("/")
         pass
     except ZeroDivisionError:
         pass
+    i+=1
