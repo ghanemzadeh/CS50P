@@ -14,7 +14,7 @@ total = 0
 while True:
 
     try:
-        item = input("Item: ")
+        item = input("Item: ").title()
         if item in items:
             price = float (items[item])
             total +=round(price, 2)
