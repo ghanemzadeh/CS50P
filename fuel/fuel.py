@@ -5,7 +5,7 @@ while True:
         x = int(x)
         y = int(y)
 
-        percent = int(x/y*100)
+        percent = int(round(x/y*100))
         if percent <= 1:
            print("E")
            break
