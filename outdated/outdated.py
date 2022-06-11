@@ -27,7 +27,6 @@ while True:
        break
     except ValueError:
         try:
-            print("month")
             m, d, y = date.split(" ")
             d, z= d.split(",")
             d = int (d)
