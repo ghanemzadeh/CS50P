@@ -13,7 +13,8 @@ months = [
     "December"
 ]
 
-while True:
-    try:
-        date = input ("Date: ")
-        x, y = fraction.split("/")
+
+try:
+    date = input ("Date: ")
+    m, d, y = fraction.split("/")
+    print (y, "-", m,"-", d)
