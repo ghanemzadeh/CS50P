@@ -22,12 +22,14 @@ while True:
        #0 >= m >= 13 or
        if d > 31 or m >12:
            continue
-       print (y, f"{m:02}", d, sep="-")
+       print (y, f"{m:02}", d, sep="-", end="")
        break
     except ValueError:
         try:
             m, d, y = date.split(" ")
             m = months.index(m) + 1
+            if d > 31 or m >12:
+                continue
             print (y, f"{m:02}", d, sep="-")
             break
         except ValueError:
