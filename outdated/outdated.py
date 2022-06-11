@@ -29,6 +29,7 @@ while True:
         try:
             m, d, y = date.split(" ")
             d = int (d)
+            y = int(y)
             m = months.index(m) + 1
             if d > 31 or m >12:
                 continue
