@@ -5,13 +5,13 @@ total = 0
 while True:
 
     try:
-        item = input("Item: ").title()
+        grocery = input("Item: ").title()
         if grocery in groceries:
-            price = float (items[item])
+            groceries[grocery]+=1
             total +=round(price, 2)
             print("total: ", f"${total:.2f}")
         else:
-            
+
     except EOFError:
         print("\n")
         break
