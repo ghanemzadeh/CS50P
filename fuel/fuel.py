@@ -1,9 +1,10 @@
-fraction = input ("Fraction: ")
-x, y = fraction.split("/")
+
 
 i=1
-while i < 3:
+while True:
     try:
+        fraction = input ("Fraction: ")
+        x, y = fraction.split("/")
         x = int(x)
         y = int(y)
 
