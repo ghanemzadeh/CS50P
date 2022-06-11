@@ -20,3 +20,4 @@ while True:
 
 for grocery in sorted (groceries.keys()):
     print(groceries[grocery], grocery)
+    print()
