@@ -11,6 +11,7 @@ while True:
         else:
             groceries.update({grocery:1})
     except EOFError:
+        print()
         break
     except KeyError:
         pass
