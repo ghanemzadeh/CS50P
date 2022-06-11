@@ -15,5 +15,5 @@ while True:
         break
     except KeyError:
         pass
-groceries.sort()
+sorted(groceries)
 print(groceries)
