@@ -17,7 +17,8 @@ while True:
     try:
        date = input ("Date: ")
        m, d, y = date.split("/")
-       if int(m) > 12:
+       m = int(m)
+       if m > 12:
            continue
        print (y, "-", f"{m:02}","-", d)
        break
