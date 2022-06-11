@@ -16,5 +16,7 @@ while True:
     except KeyError:
         pass
 
+print (groceries)
+
 for grocery in sorted (groceries.keys()):
     print(groceries[grocery], grocery)
