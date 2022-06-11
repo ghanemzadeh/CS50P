@@ -11,13 +11,8 @@ while True:
         else:
             groceries[grocery]=1
     except EOFError:
-        print()
+        for grocery in sorted (groceries.keys()):
+            print(groceries[grocery], grocery)
         break
     except KeyError:
         pass
-
-#print (groceries)
-
-for grocery in sorted (groceries.keys()):
-    print(groceries[grocery], grocery)
-    print()
