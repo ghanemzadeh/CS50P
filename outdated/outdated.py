@@ -29,11 +29,9 @@ while True:
         try:
             print("month")
             m, d, y = date.split(" ")
-            d = d.split(",")
-            print("ymd= ",y,m,d)
+            d, z= d.split(",")
             d = int (d)
             y = int (y)
-            print("ymd2= ",y,m,d)
             m = months.index(m) + 1
             if d > 31 or m >12:
                 continue
