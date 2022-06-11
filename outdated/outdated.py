@@ -21,7 +21,7 @@ while True:
        d = int (d)
        if 1 > m > 12 and 1 > d >31:
            continue
-       pprint (y, f"{m:02}", d, sep="-")
+       print (y, f"{m:02}", d, sep="-")
        break
     except ValueError:
         try:
