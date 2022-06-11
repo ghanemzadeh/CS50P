@@ -24,6 +24,6 @@ while True:
        break
     except ValueError:
         print("valeue")
-        if m in months:
-            m
+        mm = months.index(m)
+        print("index", mm)
         pass
