@@ -10,3 +10,7 @@
     "Tortilla Salad": 8.00
 }
 
+try:
+    item = input("Item: ")
+except EOFError:
+    ...
