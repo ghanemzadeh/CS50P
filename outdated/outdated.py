@@ -17,7 +17,7 @@ while True:
     try:
        date = input ("Date: ")
        m, d, y = date.split("/")
-       print (y, "-", m,"-", d)
+       print (y, "-", f"{m:02}","-", d)
        break
     except ValueError:
       pass
