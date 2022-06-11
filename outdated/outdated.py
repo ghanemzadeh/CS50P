@@ -23,4 +23,5 @@ while True:
        print (y, "-", f"{m:02}","-", d)
        break
     except ValueError:
-      pass
+        print("valeue")
+        pass
