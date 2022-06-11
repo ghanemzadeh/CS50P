@@ -24,7 +24,7 @@ while True:
        print (y, "-", f"{m:02}","-", d)
        break
     except ValueError:
-        m, d, y = date.split(",")
+        m, d, y = date.split(" ")
         print("valeue")
         mm = months.index(m)
         print("index", mm)
