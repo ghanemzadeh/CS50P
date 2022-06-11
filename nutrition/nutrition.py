@@ -16,7 +16,7 @@ fruits = {
     "pineapple": 50,
     "plums": 70,
     "ptrawberries": 50,
-    "sweet cherries": 100,
+    "supdate50weet cherries": 100,
     "tangerine": 50,
     "watermelon": 80
 }
