@@ -3,9 +3,9 @@ groceries = {
 
 total = 0
 while True:
-    grocery = input("Item: ").upper()
-    try:
 
+    try:
+        grocery = input("Item: ").upper()
         if grocery in groceries:
             groceries[grocery]+=1
         else:
