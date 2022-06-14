@@ -2,4 +2,4 @@ import emoji
 
 codes = input("Input: ")
 
-print(emoji.emojize("Output: "+codes, language="alias")
+print(emoji.emojize(codes, language="alias"))
