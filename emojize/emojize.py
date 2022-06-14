@@ -2,4 +2,4 @@ import emoji
 
 codes = input("Input: ")
 
-print(emoji.emojize("Python is :thumbs_up:')
+print(emoji.emojize("Python is :thumbsup:", language="alias")
