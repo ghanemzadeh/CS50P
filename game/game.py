@@ -6,13 +6,14 @@ while True:
         pass
 
     guess = randrange(1,level+1)
-    
-    try:
-        uguess = int(input("Guess: "))
-    except ValueError:
-        pass
 
-    if uguess == guess:
+    while True:
+        try:
+            uguess = int(input("Guess: "))
+         except ValueError:
+            pass
+
+     if uguess == guess:
         print("Just right!")
     elif uguess > guess:
         print("Too large!")
@@ -20,5 +21,6 @@ while True:
     else:
         print("Too small!")
         pass
+
 
     break
