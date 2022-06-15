@@ -53,13 +53,14 @@ def three_try(x , y):
             else:
                 i -=1
                 print("EEE")
-        except:
-            i -=1
-            print("EEE")
         except EOFError:
             print ("stop")
             break
-        
+        except:
+            i -=1
+            print("EEE")
+
+
     print(f"{x} + {y} = ", x+y)
     return False
 
