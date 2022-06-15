@@ -2,17 +2,18 @@ import random
 
 
 def main():
-    l = get_level()
-
+    #l = get_level()
+    three_try(3 , 5)
     score = 0
-    for _ in range(10):
-        x = generate_integer(l)
-        y = generate_integer(l)
-        xy = str(x) + " + " + str(y) + " = "
-        result = int(input(f"{x} + {y} = "))
-        if result == x+y:
-            score += 1
-        else:
+    # for _ in range(10):
+    #    x = generate_integer(l)
+    #    y = generate_integer(l)
+    #    xy = str(x) + " + " + str(y) + " = "
+    #    result = int(input(f"{x} + {y} = "))
+    #    if result == x+y:
+    #        score += 1
+    #    else:
+
 
 
     print("Score: ", score)
@@ -45,7 +46,6 @@ def generate_integer(level):
 
 def three_try(x , y):
     i = 3
-
     while i > 0:
         try:
             result = int(input(f"{x} + {y} = "))
@@ -56,7 +56,7 @@ def three_try(x , y):
                 print("EEE")
         except:
             i -=1
-                print("EEE")
+            print("EEE")
 
 
 
