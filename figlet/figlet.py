@@ -11,6 +11,7 @@ if len(sys.argv) == 3:
     else:
         print("Invalid usage")
         sys.exit
+        
 elif len(sys.argv) == 1:
     f = choice(figlet.getFonts())
 
