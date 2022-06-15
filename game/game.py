@@ -5,6 +5,6 @@ while True:
     if level <= 0:
         pass
 
-    guess= randrange(1,level)
+    guess= randrange(1,level+1)
     print("Guess: ",guess)
     break
