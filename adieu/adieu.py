@@ -1,7 +1,6 @@
 import inflect
 p = inflect.engine()
 
-list = ""
 names = []
 
 while True:
@@ -12,5 +11,4 @@ while True:
         print("\n")
         break
 
-list = p.join(names)
-print("Adieu, adieu, to", list)
+print("Adieu, adieu, to", p.join(names))
