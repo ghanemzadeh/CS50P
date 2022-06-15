@@ -45,16 +45,16 @@ def generate_integer(level):
 
 def three_try(x , y):
     i = 3
+
     while i > 0:
-        result = int(input(f"{x} + {y} = "))
+        try:
+            result = int(input(f"{x} + {y} = "))
         if result == x+y:
             return True
         else:
-            
-break
-else:
- i -=1
-print (xy, x+y)
+             i -=1
+             print("EEE")
+
 
 
 if __name__ == "__main__":
