@@ -1,1 +1,4 @@
-from random import choice
+from random import randrange
+
+
+random.randrange(stop)
