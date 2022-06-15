@@ -13,7 +13,7 @@ while True:
         uguess = int(input("Guess: "))
         if uguess <= 0:
             print("negative")
-            pass
+            continue
     except ValueError:
         pass
 
