@@ -1,2 +1,2 @@
 import sys
-import pyfiglet
+from pyfiglet import Figlet
