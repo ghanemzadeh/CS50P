@@ -2,17 +2,17 @@ import random
 
 
 def main():
-    ...
+    print("level is:", get_level())
 
 
 def get_level():
     while True:
-    try:
-        level = int(input("Level: "))
-        if 4 > level > 0:
-            break
-    except ValueError:
-        continue
+        try:
+            level = int(input("Level: "))
+            if 4 > level > 0:
+                break
+        except ValueError:
+            continue
 
     return level
 
