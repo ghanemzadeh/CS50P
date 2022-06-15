@@ -2,15 +2,15 @@ import inflect
 p = inflect.engine()
 
 list = ""
-
+names = []
 
 while True:
     try:
         name = input ("Name: ")
-        list = p.join(("", name))
-        print("list is=", list)
+        names.append(name)
     except EOFError:
         print("\n")
         break
 
+list = p.join(names)
 print("Adieu, adieu, to", list)
