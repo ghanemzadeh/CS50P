@@ -13,6 +13,7 @@ def main():
         y = generate_integer(l)
         if three_try(x , y):
             score += 1
+
         tries -= 1
     except EOFError:
         print("\n")
