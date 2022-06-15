@@ -11,6 +11,8 @@ guess = randrange(1,level+1)
 while True:
     try:
         uguess = int(input("Guess: "))
+        if uguess <= 0:
+            pass
     except ValueError:
         pass
 
