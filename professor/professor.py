@@ -33,7 +33,7 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if 4 > level > 0:
+            if level in [1,2,3]:
                 break
         except ValueError:
             continue
