@@ -6,11 +6,14 @@ while True:
         pass
 
     guess = randrange(1,level+1)
-    uguess = input("Guess: ")
+    uguess = int(input("Guess: "))
     if uguess == guess:
-        Print(Just right!)
-    elif 
+        print("Just right!")
+    elif uguess > guess:
+        print("Too large!")
+        pass
+    else:
+        print("Too small!")
+        pass
 
-    Too small!
-    p
     break
