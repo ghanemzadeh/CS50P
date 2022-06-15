@@ -15,6 +15,7 @@ def main():
                 score += 1
             tries -= 1
         except EOFError:
+            print ("stopr")
             break
 
     print("Score: ", score)
