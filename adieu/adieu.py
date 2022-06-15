@@ -1,4 +1,5 @@
 import inflect
+p = inflect.engine()
 
 name = input ("Name: ")
 
