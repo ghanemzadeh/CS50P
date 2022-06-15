@@ -2,9 +2,9 @@ from random import randrange
 
 while True:
     level = int(input("Level: "))
-    if level <= 0:
-        pass
-    break
+    if level > 0:
+        break
+
 
 guess = randrange(1,level+1)
 
