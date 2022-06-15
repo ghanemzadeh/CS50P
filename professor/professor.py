@@ -5,12 +5,19 @@ def main():
 
     l = get_level()
     score = 0
-    
-    for _ in range (10):
+
+    tries = 10
+    while tries > 0:
+    try:
         x = generate_integer(l)
         y = generate_integer(l)
         if three_try(x , y):
             score += 1
+    except EOFError:
+        print("\n")
+        break
+    for _ in range (10):
+
 
     print("Score: ", score)
 
