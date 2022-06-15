@@ -1,7 +1,7 @@
 import inflect
 p = inflect.engine()
 
-list =""
+list = ""
 
 while True:
     try:
