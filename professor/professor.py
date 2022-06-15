@@ -7,7 +7,7 @@ def main():
     #print("int is:", generate_integer(l))
 
     score = 0
-    for _ in range(3):
+    for _ in range(10):
         x = generate_integer(l)
         y = generate_integer(l)
         xy = str(x) + " + " + str(y) + " = "
@@ -15,7 +15,7 @@ def main():
         if result == x+y:
             score += 1
         else:
-            i = 3
+            i = 2
             while i > 0:
                 print ("EEE")
                 result = int(input(xy))
@@ -24,6 +24,7 @@ def main():
                     break
                 else:
                     i -=1
+            print (xy, x+y)
 
     print("Score: ", score)
 
