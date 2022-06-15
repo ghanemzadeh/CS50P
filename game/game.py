@@ -1,10 +1,12 @@
 from random import randrange
 
 while True:
-    level = int(input("Level: "))
-    if level > 0:
-        break
-
+    try:
+        level = int(input("Level: "))
+        if level > 0:
+            break
+    except ValueError:
+        continue
 
 guess = randrange(1,level+1)
 
