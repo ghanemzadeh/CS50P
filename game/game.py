@@ -14,7 +14,7 @@ while True:
         if uguess <= 0:
             continue
     except ValueError:
-        pass
+        continue
 
     if uguess == guess:
         print("Just right!")
