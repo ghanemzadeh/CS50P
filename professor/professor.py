@@ -6,14 +6,13 @@ def main():
     l = get_level()
     score = 0
 
-    tries = 10
+    tries = 3
     while tries > 0:
         try:
             x = generate_integer(l)
             y = generate_integer(l)
             if three_try(x , y):
                 score += 1
-
             tries -= 1
         except EOFError:
             break
