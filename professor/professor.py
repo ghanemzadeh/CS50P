@@ -49,11 +49,15 @@ def three_try(x , y):
     while i > 0:
         try:
             result = int(input(f"{x} + {y} = "))
-        if result == x+y:
-            return True
-        else:
-             i -=1
-             print("EEE")
+            if result == x+y:
+                return True
+            else:
+                i -=1
+                print("EEE")
+        except:
+            i -=1
+                print("EEE")
+
 
 
 
