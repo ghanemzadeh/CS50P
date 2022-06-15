@@ -1,3 +1,5 @@
+import inflect
+
 name = input ("Name: ")
 
 while True:
