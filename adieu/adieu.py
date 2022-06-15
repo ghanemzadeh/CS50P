@@ -12,3 +12,5 @@ while True:
             groceries[grocery]=1
     except EOFError:
         print("\n")
+
+print("Adieu, adieu, to", list)
