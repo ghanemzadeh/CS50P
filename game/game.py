@@ -5,6 +5,12 @@ while True:
     if level <= 0:
         pass
 
-    guess= randrange(1,level+1)
-    print("Guess: ",guess)
+    guess = randrange(1,level+1)
+    uguess = input("Guess: ")
+    if uguess == guess:
+        Print(Just right!)
+    elif 
+
+    Too small!
+    p
     break
