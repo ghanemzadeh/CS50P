@@ -6,6 +6,7 @@ def main():
     print("level is:", l)
     print("int is:", generate_integer(l))
 
+    score = 0
     for in in range(10):
         
 
