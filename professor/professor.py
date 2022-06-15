@@ -3,8 +3,6 @@ import random
 
 def main():
     l = get_level()
-    #print("level is:", l)
-    #print("int is:", generate_integer(l))
 
     score = 0
     for _ in range(10):
