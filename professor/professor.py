@@ -1,11 +1,9 @@
 import random
 
-
 def main():
-
     l = get_level()
-    score = 0
 
+    score = 0
     tries = 10
     while tries > 0:
         x = generate_integer(l)
@@ -13,7 +11,6 @@ def main():
         if three_try(x , y):
             score += 1
         tries -= 1
-
 
     print("Score: ", score)
 
