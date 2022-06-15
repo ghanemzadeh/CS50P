@@ -5,15 +5,12 @@ def main():
 
     l = get_level()
     score = 0
-    for _ in range (3):
+    
+    for _ in range (10):
         x = generate_integer(l)
         y = generate_integer(l)
-        result = int(input(f"{x} + {y} = "))
-        if result == x+y:
+        if three_try(x , y):
             score += 1
-        else:
-
-
 
     print("Score: ", score)
 
