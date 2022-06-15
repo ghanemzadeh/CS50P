@@ -9,10 +9,12 @@ def get_level():
     while True:
     try:
         level = int(input("Level: "))
-        if level > 0:
+        if 4 > level > 0:
             break
     except ValueError:
         continue
+
+    return level
 
 
 def generate_integer(level):
