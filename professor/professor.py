@@ -6,7 +6,7 @@ def main():
     l = get_level()
     score = 0
 
-    tries = 3
+    tries = 10
     while tries > 0:
         try:
             x = generate_integer(l)
