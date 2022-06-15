@@ -7,15 +7,25 @@ def main():
     print("int is:", generate_integer(l))
 
     score = 0
-    for _ in range(10):
+    for _ in range(3):
         x = generate_integer(l)
         y = generate_integer(l)
-        xy = str(x) + " + " + str(y) + "= "
-        result= int(input(xy))
+        xy = str(x) + " + " + str(y) + " = "
+        result = int(input(xy))
         if result == x+y:
             score += 1
         else:
-            print ("EEE")
+            i = 3
+            while i > 0:
+                print ("EEE")
+                result = int(input(xy))
+                if result == x+y:
+                    score += 1
+                    break
+                else:
+                    i -=1
+
+    print("Score: ", score)
 
 
 def get_level():
