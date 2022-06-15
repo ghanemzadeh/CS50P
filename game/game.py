@@ -12,12 +12,12 @@ while True:
     try:
         uguess = int(input("Guess: "))
         if uguess <= 0:
+            print("negative")
             pass
     except ValueError:
         pass
 
     if uguess == guess:
-        print
         print("Just right!")
         break
     elif uguess > guess:
