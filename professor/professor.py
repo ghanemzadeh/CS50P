@@ -9,7 +9,7 @@ def main():
         x = generate_integer(l)
         y = generate_integer(l)
         xy = str(x) + " + " + str(y) + " = "
-        result = int(input(xy))
+        result = int(input(f"{x} + {y} = "))
         if result == x+y:
             score += 1
         else:
@@ -40,20 +40,17 @@ def get_level():
 
 
 def generate_integer(level):
-    if level <= 0 or level > 3:
+    if level not in [1,2,3]:
         raise ValueError
 
     if level == 1:
-        start = 0
-        end = 9
+        rand_num = random.randrange(0,9)
     elif level == 2:
-        start = 10
-        end = 99
+        rand_num = random.randrange(10,99)
     else:
-        start = 100
-        end = 999
+        rand_num = random.randrange(100,999)
 
-    return(random.randrange(start,end))
+    return(rand_num)
 
 
 if __name__ == "__main__":
