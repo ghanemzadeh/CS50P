@@ -7,7 +7,7 @@ list = ""
 while True:
     try:
         name = input ("Name: ")
-        list = p.join((list, name), final_sep="")
+        list = p.join((list, name))
     except EOFError:
         print("\n")
         break
