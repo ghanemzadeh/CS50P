@@ -13,11 +13,10 @@ def main():
         y = generate_integer(l)
         if three_try(x , y):
             score += 1
+        tries -= 1
     except EOFError:
         print("\n")
         break
-    for _ in range (10):
-
 
     print("Score: ", score)
 
