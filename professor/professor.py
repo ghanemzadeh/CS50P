@@ -8,16 +8,15 @@ def main():
 
     tries = 10
     while tries > 0:
-    try:
-        x = generate_integer(l)
-        y = generate_integer(l)
-        if three_try(x , y):
-            score += 1
+        try:
+            x = generate_integer(l)
+            y = generate_integer(l)
+            if three_try(x , y):
+                score += 1
 
-        tries -= 1
-    except EOFError:
-        print("\n")
-        break
+            tries -= 1
+        except EOFError:
+            break
 
     print("Score: ", score)
 
