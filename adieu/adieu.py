@@ -9,5 +9,6 @@ while True:
         list = p.join((list, name))
     except EOFError:
         print("\n")
+        break
 
 print("Adieu, adieu, to", list)
