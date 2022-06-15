@@ -13,16 +13,7 @@ def main():
         if result == x+y:
             score += 1
         else:
-            i = 2
-            while i > 0:
-                print ("EEE")
-                result = int(input(xy))
-                if result == x+y:
-                    score += 1
-                    break
-                else:
-                    i -=1
-            print (xy, x+y)
+
 
     print("Score: ", score)
 
@@ -51,6 +42,18 @@ def generate_integer(level):
         rand_num = random.randrange(100,999)
 
     return(rand_num)
+
+def three_try(x , y):
+    i = 3
+    while i > 0:
+    print ("EEE")
+result = int(input(xy))
+if result == x+y:
+score += 1
+break
+else:
+ i -=1
+print (xy, x+y)
 
 
 if __name__ == "__main__":
