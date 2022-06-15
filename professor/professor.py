@@ -46,7 +46,7 @@ def generate_integer(level):
         raise ValueError
 
     if level == 1:
-        start = 1
+        start = 0
         end = 9
     elif level == 2:
         start = 10
