@@ -18,7 +18,7 @@ try:
 )
     result = response.json()
     for result in result["bpi"]["USD"]:
-        print(result)
+        print(result["rate"])
 except requests.RequestException:
      sys.exit
 
