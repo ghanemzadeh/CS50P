@@ -1,10 +1,10 @@
 import sys
 import requests
 
-if len(sys.argv) <= 2:
+if len(sys.argv) < 2:
     print("Missing command-line argument")
     sys.exit
-elif len(sys.argv) == 3:
+elif len(sys.argv) == 2:
     try:
         coins = float (sys.argv[2])
     except:
