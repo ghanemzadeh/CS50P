@@ -1,4 +1,5 @@
 import random
+import sys
 
 def main():
     l = get_level()
@@ -50,6 +51,8 @@ def three_try(x , y):
             else:
                 i -=1
                 print("EEE")
+        except EOFError:
+                sys.exit()
         except:
             i -=1
             print("EEE")
