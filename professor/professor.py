@@ -7,11 +7,14 @@ def main():
     score = 0
     tries = 10
     while tries > 0:
-        x = generate_integer(l)
-        y = generate_integer(l)
-        if three_try(x , y):
-            score += 1
-        tries -= 1
+        try:
+            x = generate_integer(l)
+            y = generate_integer(l)
+            if three_try(x , y):
+                score += 1
+            tries -= 1
+        except EOFError:
+                sys.exit()
 
     print("Score: ", score)
 
