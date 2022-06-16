@@ -16,7 +16,9 @@ try:
     response = requests.get(
     "https://api.coindesk.com/v1/bpi/currentprice.json"
 )
-    print(response.json())
+    result = esponse.json()
+    for result in result["results"]:
+        print(result["trackName"])
 except requests.RequestException:
      sys.exit
 
