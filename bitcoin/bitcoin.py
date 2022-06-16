@@ -16,7 +16,7 @@ try:
     response = requests.get(
     "https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1]
 )
-print(response.json())
+    print(response.json())
 except requests.RequestException:
 
 
