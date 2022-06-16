@@ -1,3 +1,4 @@
+import sys
 import requests
 
 if len(sys.argv) == 2:
