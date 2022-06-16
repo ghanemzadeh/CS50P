@@ -14,9 +14,9 @@ elif len(sys.argv) == 2:
 
 try:
     response = requests.get(
-    "https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1]
+    "https://api.coindesk.com/v1/bpi/currentprice.json"
 )
     print(response.json())
 except requests.RequestException:
-
+     sys.exit
 
