@@ -17,8 +17,9 @@ try:
     "https://api.coindesk.com/v1/bpi/currentprice.json"
 )
     result = response.json()
-    for result in result["bpi"]["USD"]:
-        print(result["rate"])
+
+    rate = float(result["bpi"]["USD"]["rate"])
+    print (rate)
 except requests.RequestException:
      sys.exit
 
