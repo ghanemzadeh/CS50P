@@ -1,7 +1,7 @@
 import sys
 import requests
 
-print ("we are in")
+#print ("we are in")
 if len(sys.argv) < 2:
     print("Missing command-line argument")
     sys.exit
