@@ -19,11 +19,9 @@ try:
     result = response.json()
     rate = result["bpi"]["USD"]["rate"]
     rate = rate.replace (",","")
-    print (rate)
     rate = float(rate)
-    print (rate)
     exchange = coins * rate
-    print (f"${exchange}")
+    print (f"${exchange:,}")
 except requests.RequestException:
      sys.exit
 
