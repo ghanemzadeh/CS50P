@@ -6,7 +6,6 @@ def main():
         print("Invalid")
 
 
-
 def is_valid(s):
     status = True
     if len(s) < 2 or len(s) > 6 :
