@@ -5,9 +5,8 @@ from plates import is_valid
 def test_letters():
     assert is_valid("CS50") == True
     assert is_valid("AAA") == True
-    assert is_valid("CS50") == False
-    #assert is_valid("AAA222") == True
-    assert is_valid("AAA22A") == False
+    assert is_valid("AAA222") == True
+    #assert is_valid("AAA22A") == False
 
 def test_length():
     assert is_valid("TP") == True
