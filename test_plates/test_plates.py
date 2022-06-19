@@ -3,7 +3,7 @@ import pytest
 from plates import is_valid
 
 def test_letters():
-    assert value("Hello") == 0
+    assert value("CS50") == True
     assert value("Hello, Newman") == 0
     assert value("How you doing?") == 20
     assert value("What's happening?") == 100
