@@ -18,6 +18,8 @@ def test_numbers():
     assert is_valid("CS50P") == False
     assert is_valid("CS05") == False
     assert is_valid("52A") == False
+    assert is_valid("65") == False
+
 
 def test_punctuation():
     assert is_valid("PI3.14") == False
