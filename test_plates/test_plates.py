@@ -2,7 +2,7 @@ import pytest
 
 from plates import is_valid
 
-def test_letters():
+def test_alphabetical():
     assert is_valid("CS50") == True
 
 
