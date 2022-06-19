@@ -4,12 +4,13 @@ from plates import is_valid
 
 def test_letters():
     assert value("CS50") == True
-    assert value("How you doing?") == 20
-    assert value("What's happening?") == 100
+
 
 def test_length():
     assert value("TP") == True
-    assert value("") == 0
+    assert value("H") == False
+    assert value("OUTATIME") == False
+    assert value("Abadan") == True
 
 def test_numbers():
     assert value("CS50P") == False
