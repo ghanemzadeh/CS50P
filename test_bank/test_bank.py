@@ -7,5 +7,5 @@ def test_value():
     assert value("Hello") == 0
     assert value("Hello, Newman") == 0
     assert value("How you doing?") == 20
-    assert value("This Is A Test") == "Ths s  Tst"
+    assert value("What's happening?") == 100
 
