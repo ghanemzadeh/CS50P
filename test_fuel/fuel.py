@@ -14,7 +14,7 @@ def convert(fraction):
 
     return int(round(x/y*100))
 
-    
+
     if percent <= 1:
            print("E")
            break
@@ -26,6 +26,7 @@ def convert(fraction):
         else:
             print (str(percent)+"%")
             break
+
     except ValueError:
         print("x/y, x or y are not intger")
         pass
