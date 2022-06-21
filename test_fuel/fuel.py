@@ -28,7 +28,7 @@ def convert(fraction):
 def gauge(percentage):
     if percentage <= 1:
         return "E"
-    elif 100 >= percentage >= 90:
+    elif percentage >= 99:
         return "F"
     else:
         return str(percentage)+"%"

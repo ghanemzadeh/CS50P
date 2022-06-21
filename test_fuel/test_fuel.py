@@ -8,6 +8,6 @@ def test_convert():
 
 def test_gauge():
     assert gauge(1) == "E"
-    assert gauge(90) == "F"
+    assert gauge(99) == "F"
     assert gauge(100) == "F"
     assert gauge(80) == "80%"
