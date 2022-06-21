@@ -11,10 +11,9 @@ def test_convert():
     except ZeroDivisionError:
         pass
 
-    try:
-        assert convert("10/3")
-    except ValueError:
-        pass
+def test_valueerror:
+    with pytest.raised(ValueError):
+        onvert("10/3")
 
 def test_gauge():
     assert gauge(1) == "E"
