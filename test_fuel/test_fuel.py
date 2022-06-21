@@ -5,12 +5,14 @@ from fuel import convert, gauge
 def test_convert():
     assert convert("3/4") == 75
     assert convert("1/4") == 25
+
     try:
         assert convert("1/0")
     except ZeroDivisionError:
         pass
+
     try:
-        assert convert("5/3")
+        assert convert("10/3")
     except ValueError:
         pass
 
