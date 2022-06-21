@@ -9,6 +9,10 @@ def test_convert():
         assert convert("1/0")
     except ZeroDivisionError:
         pass
+    try:
+        assert convert("5/3")
+    except ValueError:
+        pass
 
 def test_gauge():
     assert gauge(1) == "E"
