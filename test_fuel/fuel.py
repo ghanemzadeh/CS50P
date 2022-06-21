@@ -5,7 +5,7 @@ def main():
             percent = convert(fraction)
             print (gauge (percent))
         except ValueError:
-            print("x/y, x or y are not intger")
+            print("x/y, x should be < y")
             pass
         except ZeroDivisionError:
             print("x/y, y should not be Zero")
