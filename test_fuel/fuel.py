@@ -10,8 +10,6 @@ def main():
         except ZeroDivisionError:
             print("x/y, y should not be Zero")
             pass
-        except EOFError:
-                sys.exit()
 
 
 def convert(fraction):
