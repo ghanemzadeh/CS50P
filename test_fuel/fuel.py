@@ -11,8 +11,10 @@ def convert(fraction):
         raise ZeroDivisionError
     elif x>y:
         raise ValueError
-        
-    percent = int(round(x/y*100))
+
+    return int(round(x/y*100))
+
+    
     if percent <= 1:
            print("E")
            break
