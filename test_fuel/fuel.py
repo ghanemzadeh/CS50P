@@ -4,11 +4,12 @@ def main():
             fraction = input ("Fraction: ")
             percent = convert(fraction)
             print (gauge (percent))
-    except ValueError:
-        print("x/y, x or y are not intger")
-        pass
-    except ZeroDivisionError:
-        pass
+        except ValueError:
+            print("x/y, x or y are not intger")
+            pass
+        except ZeroDivisionError:
+            print("x/y, y should not be Zero")
+            pass
 
 
 def convert(fraction):
