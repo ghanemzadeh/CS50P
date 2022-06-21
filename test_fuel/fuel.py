@@ -1,5 +1,14 @@
 def main():
-    ...
+    while True:
+        try:
+            fraction = input ("Fraction: ")
+            percent = convert(fraction)
+            print (gauge (percent))
+    except ValueError:
+        print("x/y, x or y are not intger")
+        pass
+    except ZeroDivisionError:
+        pass
 
 
 def convert(fraction):
