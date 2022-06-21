@@ -7,6 +7,11 @@ def convert(fraction):
     x = int(x)
     y = int(y)
 
+    if y == 0:
+        raise ZeroDivisionError
+    elif x>y:
+        raise ValueError
+        
     percent = int(round(x/y*100))
     if percent <= 1:
            print("E")
