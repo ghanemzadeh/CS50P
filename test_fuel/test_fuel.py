@@ -6,15 +6,11 @@ def test_convert():
     assert convert("3/4") == 75
     assert convert("1/4") == 25
 
-    try:
-        assert convert("1/0")
-    except ZeroDivisionError:
-        pass
-def test_valueerror():
-    with pytest.raises(ValueError):
-        convert("10/3"
-        
-def test_valueerror():
+def test_divid_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        convert("1/0")
+
+def test_value_error():
     with pytest.raises(ValueError):
         convert("10/3")
 
